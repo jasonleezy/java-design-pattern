@@ -17,7 +17,7 @@ public class Teacher implements Subject {
 
 	public void removeWatcher(String name) {
 		for(Watcher watcher:this.watchers){
-			if(((Student) watcher).getName().equalsIgnoreCase(name)){
+			if(((People) watcher).getName().equalsIgnoreCase(name)){
 				watchers.remove(watcher);
 				System.out.println(name + " went away");
 				break;

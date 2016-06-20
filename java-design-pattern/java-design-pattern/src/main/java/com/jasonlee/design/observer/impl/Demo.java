@@ -33,6 +33,11 @@ public class Demo {
 		//jeff 中途假装肚子疼，请假出去吃早餐
 		teacher.removeWatcher("jeff");
 		
+		//下课前，班主任来到门口，等着任课老师下课，然后查逃课学生
+		ClassTeacher ct = new ClassTeacher();
+		ct.setName("classTeacher");
+		teacher.addWatcher(ct);
+		
 		//下课铃响起。老师说，“下课”；每个在课堂的学生都会起立，说，老师 再见。
 		Message googbye = new Message();
 		googbye.setType(3);
